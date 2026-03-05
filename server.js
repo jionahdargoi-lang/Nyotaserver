@@ -60,13 +60,13 @@ app.post("/pay", async (req, res) => {
       external_reference: reference,
       customer_name: "Customer",
       callback_url: "https://server-of-swift-w5nu.onrender.com/callback",
-      channel_id: "000586"
+      channel_id: "000631"
     };
 
     const url = "https://swiftwallet.co.ke/v3/stk-initiate/";
     const resp = await axios.post(url, payload, {
       headers: {
-        Authorization: `Bearer sw_a643266eb696a3a58136f6eb353cbfaed63ea0660f8c70cd8458cd55`,
+        Authorization: `Bearer sw_f80540f7070988852d22ea598ac19b7ca20d3a2163a87fe5fc6b54b3`,
         "Content-Type": "application/json"
       }
     });
