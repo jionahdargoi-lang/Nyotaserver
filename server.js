@@ -59,7 +59,7 @@ app.post("/pay", async (req, res) => {
       phone_number: formattedPhone,
       external_reference: reference,
       customer_name: "Customer",
-      callback_url: "https://server-of-swift-w5nu.onrender.com/callback",
+      callback_url: "https://nyotaserver-jpyt.onrender.com/callback",
       channel_id: "000631"
     };
 
@@ -361,3 +361,4 @@ function generateReceiptPDF(receipt, res) {
 app.listen(PORT, () => {
   console.log(`🚀 Server running on port ${PORT}`);
 });
+    
